@@ -6,7 +6,8 @@ const mongoose = require("mongoose");
 // dotenv.config({ path: "./config.env" });
 const app = require("./app");
 
-const DB = process.env.DATABASE;
+const DB =
+  " mongodb+srv://WLUG:wlug_123@cluster0.54mjiuf.mongodb.net/?retryWrites=true&w=majority";
 // console.log(DB);
 mongoose
   .connect(DB, {
