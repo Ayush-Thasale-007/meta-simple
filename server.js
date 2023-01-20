@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 const app = require("./app");
 
 const DB =
-  " mongodb+srv://WLUG:wlug_123@cluster0.54mjiuf.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://WLUG:wlug_123@cluster0.54mjiuf.mongodb.net/?retryWrites=true&w=majority";
 // console.log(DB);
 mongoose
   .connect(DB, {
