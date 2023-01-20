@@ -1,15 +1,18 @@
-const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-
 dotenv.config({ path: "./config.env" });
+
+const mongoose = require("mongoose");
+
+// dotenv.config({ path: "./config.env" });
 const app = require("./app");
 
 const DB = process.env.DATABASE;
-console.log(DB);
+// console.log(DB);
 mongoose
   .connect(DB, {
-    useNewUrlParser: true,
     useUnifiedTopology: true,
+    useNewUrlParser: true,
+    // useCreateIndex: true,
   })
   .then(() => console.log("DB connection successful!"));
 
